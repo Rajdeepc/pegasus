@@ -1,0 +1,134 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+*:focus {
+    outline: 0;
+}
+.no-padding{
+    padding: 0px;
+}
+#root {
+
+    .pull-right {
+        float: right;
+    }
+    .pull-left{
+        float: left;
+    }
+    #jsonEditor-labels {
+        background: #f4f4f5;
+        color: #7d7d7d;
+    }
+    .string {
+        color: #1976D2;
+    }
+
+    .number {
+        color: #00796B;
+    }
+
+    .boolean {
+        color: blue;
+    }
+
+    .null {
+        color: magenta;
+    }
+
+    .key {
+        color: #D32F2F;
+    }
+
+
+
+    .btn-outline-secondary {
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: #6c757d;
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+
+    ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #BDBDBD;
+        font-size: 12px;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #BDBDBD;
+        font-size: 12px;
+    }
+
+    :-ms-input-placeholder {
+        /* IE 10+ */
+        color: #BDBDBD;
+        font-size: 12px;
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: #BDBDBD;
+        font-size: 12px;
+    }
+
+    .flexbox {
+        display: flex;
+        flex-direction: row;
+
+        .flex1 {
+            flex: 0.1;
+        }
+
+        .flex7 {
+            flex: 0.7;
+        }
+
+        .flex2 {
+            flex: 0.2
+        }
+
+        .flex8 {
+            flex: 0.8
+        }
+    }
+
+    .backBlck {
+        background: #212121;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-link.active .nav-link:hover {
+        border: 0px;
+        border-bottom: 3px solid #FF5722;
+        color: #2F303A;
+        background: #f9f9f9;
+    }
+
+    .flex6 {
+        flex: 0.6;
+    }
+
+    .padd12 {
+        padding: 0px 12px
+    }
+
+    .btn-primary {
+        background: #673AB7;
+        color: #fff;
+        border-color: #673AB7;
+
+    }
+}

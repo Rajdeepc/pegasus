@@ -1,0 +1,32 @@
+.save-modal-header {
+    background: #212121;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 15px;
+
+    button {
+        color: #fff;
+        opacity: 1;
+    }
+
+    .modal-title {
+        font-size: 14px;
+        line-height: normal;
+    }
+}
+
+.save-modal-body {
+    color: #949494;
+}
+
+.save-modal-footer {
+    .btn{
+        font-size: 14px;
+    }
+    .btn-primary {
+        background: #673AB7;
+        color: #fff;
+        border-color: #673AB7;
+    }
+}

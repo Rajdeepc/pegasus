@@ -1,0 +1,43 @@
+.profile {
+  letter-spacing: 2.9px;
+  font-size: 13px;
+  color: #7d7d7d;
+
+  img {
+    vertical-align: sub;
+    margin-right: 10px;
+  }
+
+  .user-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    .profile-img {
+      width: 25px;
+      img {
+        max-width: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .dropdown {
+      button.btn.btn-secondary {
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        line-height: 0;
+        border: 0px;
+        padding-left: 5px;
+      }
+    }
+  }
+  .dropdown-logout {
+    p {
+      padding: 0px 10px;
+      margin: 0px;
+      cursor: pointer;
+      letter-spacing: normal;
+    }
+  }
+}

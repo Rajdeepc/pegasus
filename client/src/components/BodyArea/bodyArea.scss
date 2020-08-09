@@ -1,0 +1,49 @@
+.body-area {
+    color: #757575;
+    font-size: 13px;
+
+    .body-type-option {
+        border-bottom: 1px solid #dee2e6;
+
+        .nav-item {
+            padding:8px 15px;
+            .rawTypeDropdown {
+                background: transparent;
+                border: 0px;
+                color: #673AB7;
+            }
+
+            a {
+                color: #757575;
+            }
+
+            label {
+                margin-bottom: 0px;
+            }
+            input{
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .table-param {
+        margin-bottom: 0px;
+        &.bodyArea{
+            td {
+                padding: 0;
+                border-top: 0px;
+                textarea{
+                    border: 0px;
+                    width: 100%;
+                }
+            }
+    
+            td.tdFirstChild {
+                width: 30px;
+                background: #e7ecf1;
+            }
+        }
+        
+
+    }
+}

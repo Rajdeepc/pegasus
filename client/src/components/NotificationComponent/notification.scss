@@ -1,0 +1,32 @@
+.notification-wrapper {
+    font-size: 12px;
+    color: #949494;
+    padding: 10px;
+    position: relative;
+    background: #f9f9f9;
+    border-bottom: 1px solid #dee2e6;
+    .justify-content-end.nav {
+      align-items: center;
+      .nav-item {
+        margin-left: 20px;
+      }
+    }
+    h5{
+      color: #2F303A;
+      margin: 0px;
+    }
+    .notification-alert{
+      position: relative;
+      .notifi {
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background: orangered;
+        right: 0px;
+        position: absolute;
+        top: 0px;
+      }
+    }
+      
+    
+  }

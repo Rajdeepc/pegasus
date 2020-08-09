@@ -1,0 +1,101 @@
+.response-wrapper {
+    background: #f9f9f9;
+
+    .title {
+        border-top: 1px solid #dee2e6;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .flexbox {
+        background: #fff;
+
+        pre {
+            width: 100%
+        }
+    }
+
+    .nav-pills {
+        font-size: 12px;
+        border-bottom: 1px solid #dee2e6;
+
+        a.nav-link {
+            padding: .55rem 1rem;
+            .status{
+                border-radius: 50%;
+                padding: 0px 5px;
+                margin-right: 6px;
+                font-size: 10px;
+                &.success{
+                    background: #10b518
+                }
+                &.danger {
+                    background: #FF5252;
+                }
+                &.warning {
+                    background: #FFA000;
+                }
+            }
+            .textInfo{
+                margin-left: 6px;
+                color: #7d7d7d;
+            }
+        }
+
+        a {
+             span {
+                 color: #7d7d7d;
+                 
+             }
+         }
+    }
+
+    .tab-content {
+        .paramsTable .table {
+            border-top: 0px;
+            th,
+            td {
+                padding: 6px;
+            }
+            th{
+                font-weight: bold;
+            }
+            td{
+                font-size: 14px;
+                color: #949494;
+                font-weight: 300;
+            }
+            td.keyName{
+                text-transform: capitalize;
+            }
+        }
+        .cookie-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #949494;
+            .no-cookie{
+                text-align: center;
+                width: 150px;
+                img{
+                    max-width: 100%;
+                }
+                p{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    #responseContainer{
+        .response-panel{
+            width:100%
+        }
+        .table {
+            td.number {
+                width: 30px;
+                background: #f1f1f1;
+            }
+        }
+    }
+
+}

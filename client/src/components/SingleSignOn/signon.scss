@@ -1,0 +1,38 @@
+.signin-container{
+    padding: 30px;
+    .header{
+        margin-bottom: 20px;
+        margin-top: 30px;
+        h1 {
+            font-size: 55px;
+            color: #6a98e4;
+            margin: 0px;
+        }
+    }
+    .logo {
+        margin-bottom: 30px;
+        margin: 0 auto;
+        width: 200px;
+        img {
+            max-width: 100%;
+        }
+    }
+    
+    .signon-popup{
+        text-align: center;
+        padding:15px;
+        #my-signin2{
+            div {
+                margin: 0 auto;
+            }
+        }
+        h3{
+            font-size: 22px;
+        font-weight: bold;
+        }
+        p{
+            color: #7d7d7d;
+            font-size: 12px;
+        }
+    }
+}

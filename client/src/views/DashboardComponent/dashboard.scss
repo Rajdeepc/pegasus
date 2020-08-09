@@ -1,0 +1,174 @@
+.left-panel {
+  background: #2f303a;
+  height: 100vh;
+  color: #949494;
+  font-size: 16px;
+  overflow-y: auto;
+  position: relative;
+
+  .input-group > .custom-select:not(:last-child),
+  .input-group > .form-control:not(:last-child) {
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+  }
+
+  .action-dashboard,
+  .tabs-rows-endpoints {
+    background: #3b3d4a;
+  }
+
+  .nav-pills {
+    background: transparent;
+    .api-name{
+      flex: 0.8;
+    }
+  }
+
+  .alert {
+    margin-bottom: 0px;
+
+    &.endpoints {
+      padding: 0px;
+
+      .nav-item {
+        padding: 8px 0px;
+        cursor: pointer;
+        .protocol-value {
+          margin-right: 10px;
+          font-size: 10px;
+          width: 30px;
+          display: inline-block;
+          text-align: center;
+          &.green {
+            color: #4caf50;
+          }
+          &.orange {
+            color: #ffa000;
+          }
+        }
+        a {
+          color: #949494;
+          font-size: 16px;
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 8px;
+        }
+      }
+    }
+
+    .active a {
+      color: #fff;
+    }
+
+    a {
+      color: #949494;
+      text-decoration: none;
+    }
+  }
+
+  .endpoints {
+    .row {
+      align-items: center;
+    }
+
+    .active {
+      background: #3b3d4a;
+      border-radius: 0px;
+    }
+  }
+
+  .links {
+    color: #fff;
+    padding: 12px 0px;
+  }
+
+  .addBtn {
+    border: 0px;
+    text-align: center;
+    padding: 0px;
+    color: #fff;
+    margin-left: 8px;
+  }
+
+  .credits {
+    font-size: 11px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    color: #65666b;
+    text-align: center;
+  }
+  .titleControl {
+    background: transparent;
+    border: 0;
+    color: #949494;
+    width: 75%;
+    &.border-btm {
+      border: 1px solid #565656;
+    }
+  }
+  .edit-and-save {
+    svg {
+      font-size: 12px;
+    }
+    .mr10 {
+      margin-right: 6px;
+    }
+  }
+  .tabs-rows-endpoints {
+    border-bottom: 1px solid #696969;
+    .list-group-item {
+      background: transparent;
+      border: 0px;
+      padding: 8px 0px;
+      flex: 0.5;
+      font-size: 14px;
+      text-align: center;
+      cursor: pointer;
+      &.active {
+        border-bottom: 1px solid #e49c1b;
+      }
+    }
+    .nav-link {
+      padding: 0px;
+      text-align: center;
+    }
+  }
+  .hyper-runner {
+    .schedule-run {
+      background: #3b3d4a;
+      padding: 14px 8px;
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 10px;
+      label{
+        margin: 0px;
+      }
+      input {
+        background: transparent;
+        border: 0px;
+        color: #fff;
+        margin-left: 8px;
+        border-bottom: 1px solid #696969;
+      }
+      button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        font-size: 11px;
+      }
+      
+    }
+    p {
+    }
+  }
+  .hyper-body{
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+.right-panel {
+  .apiBtn {
+    text-align: center;
+  }
+}
