@@ -141,7 +141,6 @@ If you'd like to contribute, please fork the repository and make changes as you'
 
 Inspired by [POSTMAN](https://github.com/postmanlabs)
 
-I reused part of the HTML and CSS code from these projects.
 
 ## License
 
