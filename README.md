@@ -66,23 +66,23 @@ I set the tentative deadline for motivating myself to finish the work on time. O
 > June Release, 2020
 
 - [x] Compare Response Feature - Compare responses of the same API once response structure changes
-- [x]Add or remove API Endpoints - Add and remove API endpoints from EndPoints tab
-- [x]Search Endpoints - Search through your API Endpoints with Smart Search
-- [x]Sign In Feature - Sign In to save all your api
-- [x]Notification Swtich - Switch On/Off Notifications
-- [x]Generate Code - Generate Code from your API constructs
-- [x]More Personalized Settings - More Personalised Settings Feature
-- [x]IndexDB Support - Localized data now saved in IndexDB for more storage
+- [x] Add or remove API Endpoints - Add and remove API endpoints from EndPoints tab
+- [x] Search Endpoints - Search through your API Endpoints with Smart Search
+- [x] Sign In Feature - Sign In to save all your api
+- [x] Notification Swtich - Switch On/Off Notifications
+- [x] Generate Code - Generate Code from your API constructs
+- [x] More Personalized Settings - More Personalised Settings Feature
+- [x] IndexDB Support - Localized data now saved in IndexDB for more storage
 
 ### Phase 2
 
 > Sept Release, 2020
 
-- [ ] Refactor the mono repo to use Nx Workspace
-- [ ] GraphQL API and store data on the actual database
-- [ ] Authentication
-- [ ] Websocket realtime update
-- [ ] Interactive report
+- [x] Refactor the repo with TypeScript
+- [x] Authentication with custom sign up
+- [x] Websocket realtime update on Notifications
+- [x] Difference checker switch to show attribute or values
+- [x] Automation in documentation generator of APIs
 
 ## Time spending
 
