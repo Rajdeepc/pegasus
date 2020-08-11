@@ -32,7 +32,7 @@ const SlideDrawer = (props) => {
               <strong>{item.url}</strong>
               </div>
               <div className="time">
-              <p>Updated At: {moment(item.updatedAt).format('MM/DD/YYY, hh:mm A')}</p>
+              <p>Updated At: {moment(item.updatedAt).format('MM/DD/YYYY, hh:mm A')}</p>
 
               </div>
             </div>

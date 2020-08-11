@@ -18,6 +18,9 @@ import ParamComponent from "../ParamComponent/paramComponent";
 import BodyAreaComponent from "../BodyArea/bodyAreaComponent";
 import ToggleSwitch from "../Toggle/toggle";
 import ResponseComponent from "../ResponseComponent/responseComponent";
+import DocumentationComponent from "../DocumentationComponent/DocumentationComponent";
+
+
 import Service from "../../utils/service";
 import {
   paramSerializer,
@@ -77,6 +80,10 @@ const RequestComponent = (props) => {
   const [savedResponse, setSavedResponse] = useState([]);
   const [responseDatToCompare, setResponseDataToCompare] = useState([]);
   const [showCodeModal, setShowCodeModal] = useState(false);
+  const [showDocModal, setShowDocModal] = useState(false);
+
+
+
 
   // if response changes call store api and store the respone in theb db with url
   useDeepCompareEffect(() => {
@@ -278,9 +285,19 @@ const RequestComponent = (props) => {
     setShowCodeModal(true);
   };
 
+
+  const openDocumentationModal = () => {
+    setShowDocModal(true)
+  }
+
   const handleCloseCodeModal = () => {
     setShowCodeModal(false);
   };
+
+
+  const handleCloseDocModal = () => {
+    setShowDocModal(false)
+  }
 
   return (
     <div className="api-board">
@@ -378,7 +395,7 @@ const RequestComponent = (props) => {
             <div className="flex6">
               <Nav variant="pills" className="justify-content-end extra-links">
                 <Nav.Item>
-                  <Nav.Link>Documentation</Nav.Link>
+                  <Nav.Link  onClick={() => openDocumentationModal(true)}>Documentation</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link onClick={() => openCodeGenerateModal(true)}>
@@ -489,6 +506,18 @@ const RequestComponent = (props) => {
           size="lg"
         >
           <CodeSnippets show={showCodeModal} data={requestObj} />
+        </Modal>
+      </div>
+
+      {/* Opne Documentation Modal */}
+      <div className="doc-generate-modal">
+        <Modal
+          show={showDocModal}
+          backdrop="static"
+          onHide={handleCloseDocModal}
+          dialogClassName="modal-90w"
+        >
+          <DocumentationComponent show={showDocModal} data={requestObj} />
         </Modal>
       </div>
 

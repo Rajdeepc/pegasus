@@ -12,6 +12,13 @@
       color: #fff;
   }
 }
+.modal-90w {
+  width: 90%;
+  max-width: none!important;
+  .save-modal-body{
+    height: auto;
+  }
+}
 .save-modal-body {
   height: 400px;
   .choose-filter-language {
