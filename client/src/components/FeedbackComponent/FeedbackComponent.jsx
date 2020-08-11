@@ -16,7 +16,7 @@ export default function FeedbackComponent() {
             <IoIosCloseCircleOutline size={30} onClick={hideFeedback} />
           </div>
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLScmyAPyZgusyurfyCYOnrX6TLGj6NiNrGtoJIxB9q6f5BNMVw/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSckEh66cRLKRhcvFYAn0wVgDGNZUKktBgJTIVXnTAx6pMTDrw/viewform?embedded=true"
             width="400"
             height="100%"
             frameborder="0"

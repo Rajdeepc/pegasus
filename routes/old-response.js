@@ -102,7 +102,7 @@ router.post("/", async (req, res) => {
             },
           ]
         : [],
-      subscribers: [],
+      subscribers: req.body.subscriber ? [{subscriber : req.body.subscriber , isActive: req.body.isActive }] : [],
       allNotifications: [],
     });
     await saveAPI.save();

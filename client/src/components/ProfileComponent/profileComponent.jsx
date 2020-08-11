@@ -57,9 +57,9 @@ const ProfileComponent = (props) => {
       setUser((prevState) => {
         return {
           ...prevState,
-          username: userDetail.Bd,
-          profie_pic: userDetail.MK,
-          email: userDetail.Au,
+          username: userDetail.Bd || userDetail.Cd,
+          profie_pic: userDetail.MK || userDetail.PK,
+          email: userDetail.Au || userDetail.yu,
         };
       });
     }
@@ -78,7 +78,7 @@ const ProfileComponent = (props) => {
     <>
       <Row className="profile">
         <Col md="7" className="text-left">
-          <img src={jarvis} alt="logo" />
+          <h5>teleport</h5>
         </Col>
         
         <Col md="5" className="text-right">

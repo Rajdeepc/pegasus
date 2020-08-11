@@ -16,13 +16,15 @@ const NotificationDrawerComponent = (props) => {
   const [showAlert, setShowAlert] = useState({ text: "", showToast: false });
   const [showReleaseNotes, setShowReleaseNotes] = useState(false);
 
+
+
   const showHideToast = (text, showToast) => {
     if (
       props.userSignInDetails.userSignedOn &&
       props.userSignInDetails.userDetails
     ) {
       props.showAllNotifications(
-        props.userSignInDetails.userDetails.Du,
+        props.userSignInDetails.userDetails.Du || props.userSignInDetails.userDetails.yu, //refactor
         props.url
       );
       setDrawerOpen(true);
@@ -78,7 +80,7 @@ const NotificationDrawerComponent = (props) => {
                   showHideToast("You need to login to view notifications", true)
                 }
               />
-              <div className="notifi"></div>
+             {props.notificationDetails && props.notificationDetails.length > 0 && <div className="notifi"></div> }
             </Nav.Item>
             <Nav.Item>
               Save To DB: <ToggleSwitch id="savetodb" />
@@ -133,6 +135,8 @@ NotificationDrawerComponent.propTypes = {
 
 const mapStateToProps = (state) => ({
   userSignInDetails: state.SignOnReducer,
+  notificationDetails: state.NotificationReducer.notificationList
+
 });
 
 const NotificationDrawerComponentContainer = connect(mapStateToProps, {

@@ -29,8 +29,9 @@ import { startApi } from "../../assets/images";
 import { connect } from "react-redux";
 import {
   updateEntryWithRequest,
-  updateSubscriberList,
+  updateSubscriberList
 } from "../../views/DashboardComponent/dashboard.action";
+import {showAllNotifications} from '../NotificationComponent/notification.action';
 import { BASE_URL, API_ENDPOINTS } from "../../utils/environment";
 import SaveRequestModal from "../SaveRequestModal/saveRequestModal";
 import HeaderRequest from "../HeaderRequest/headerRequest";
@@ -39,6 +40,9 @@ import PropTypes from "prop-types";
 import ToastComponent from "../../components/Toast/toastComponent";
 import useDeepCompareEffect from "use-deep-compare-effect";
 import CodeSnippets from "../CodeSnippetsComponent/codeSnippets";
+
+
+const matchParamUrl = /^\?([\w-]+(=[\w-]*)?(&[\w-]+(=[\w-]*)?)*)?$/
 
 const protocols = [
   {
@@ -66,7 +70,7 @@ const RequestComponent = (props) => {
   const [rawJsonBody, setRawJsonBody] = useState({});
   const [show, setShow] = useState(false);
 
-  const [showNotifications, setShowNotifications] = useState(false);
+  const [showNotifications, setShowNotifications] = useState(true);
   const [toastText, setToastText] = useState("");
   const [showToast, setShowToast] = useState(false);
 
@@ -82,19 +86,27 @@ const RequestComponent = (props) => {
     }
   }, [responseDatToCompare]);
 
-  // useEffect(() => {
-  //   if (url && sendBtnClicked) {
-  //     cleanUp();
-  //   }
-  // }, [url]);
+
+  useEffect(() => {
+    if(matchParamUrl.test(url)){
+      console.log('url with query param found')
+      setParamObj(deSerializeQueryParams(url))
+    }
+  },[url])
+
+  useEffect(() => {
+    if (props.signInDetails.userSignedOn && showNotifications) {
+      console.log(" user signed on and show notification is true calling all notifications api")
+      props.showAllNotifications(props.signInDetails.userDetails.Du || props.signInDetails.userDetails.yu, url)
+    }
+  }, [props.signInDetails.userSignedOn && showNotifications]);
 
   const handleClose = () => {
     setShow(false);
   };
 
   const toggleNotifications = (payload) => {
-    const subscriber =
-      props.signInDetails.userDetails && props.signInDetails.userDetails.Du;
+    const subscriber = props.signInDetails.userDetails && (props.signInDetails.userDetails.Du || props.signInDetails.userDetails.yu);
     props.updateSubscriberList(url, subscriber, payload);
   };
 
@@ -134,7 +146,7 @@ const RequestComponent = (props) => {
     let subscriber = "";
     if (userData) {
       const parsedInfo = JSON.parse(userData);
-      subscriber = parsedInfo && parsedInfo.Du ? parsedInfo.Du : "";
+      subscriber = parsedInfo && parsedInfo.Du ? parsedInfo.Du : parsedInfo.yu;
     }
     const API_URL = BASE_URL + API_ENDPOINTS.saveResponse;
     const payload = {
@@ -505,6 +517,7 @@ const mapStateToProps = (state) => ({
 const RequestComponentContainer = connect(mapStateToProps, {
   updateEntryWithRequest,
   updateSubscriberList,
+  showAllNotifications
 })(RequestComponent);
 
 export default RequestComponentContainer;

@@ -33,10 +33,10 @@ app.use("/getNotification", getNotification);
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 // MongoDB connection string
-
+const MONGO_LOCAL_URI = 'mongodb://localhost:27017/fakeDB'
 const MONGO_DB_URI = `mongodb://${process.env.MONGODB_USER}:${process.env.MONGODB_PASS}@ds119692.mlab.com:19692/vpostman`;
 mongoose
-  .connect(MONGO_DB_URI, { useNewUrlParser: true })
+  .connect(MONGO_LOCAL_URI, { useNewUrlParser: true })
   .then(() => console.log("New connection established"))
   .catch((err) => console.log("Something went wrong" + err));
 

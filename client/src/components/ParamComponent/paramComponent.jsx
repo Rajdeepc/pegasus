@@ -14,6 +14,12 @@ export default function ParamComponent(props) {
   );
   const [enableSaveButton, setEnableSaveButton] = useState(false);
 
+  // useEffect(() => {
+  //   if(props.paramObj && props.paramObj.length > 0){
+  //     setRows(props.paramObj)
+  //   }
+  // },[props.paramObj])
+
   // console.log(props.paramObj);
 
   /**
