@@ -153,9 +153,9 @@ Unit Testing done with React Testing Library.
 
 It was being tested on IE 11, Chrome and Firefox. For Safari, there are some minor alignment issues.
 
-## Author: Rajdeep Chandra ✍️
+## Author
 
-- A seasoned Full Stack Engineer. Working with React and Vue NodeJS and Web Security. Like photography, gadgets, cooking, and reading books.
+- Rajdeep Chandra - Designer,Lead Developer
 - Personal blog: http://reactive-rajdeep.netlify.com/
 - Say hello: rajrock38 [et] gmail [dot] com
 
@@ -167,8 +167,10 @@ If you'd like to contribute, please fork the repository and make changes as you'
 
 ## Credits
 
-Inspired by [POSTMAN](https://github.com/postmanlabs)
+Inspiration **Dribble**
 
+## Thanks
+[dev.to 👩‍💻👨‍💻](https://dev.to/rajdeepc/building-teleport-an-alternative-to-postman-2c5i)
 
 ## License
 
