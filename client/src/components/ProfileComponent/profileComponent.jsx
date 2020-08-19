@@ -5,16 +5,20 @@ import {
   Row,
   Modal,
   Button,
+  Navbar,
   DropdownButton,
   Dropdown,
   Col,
 } from "react-bootstrap";
 import { FaUserAstronaut } from "react-icons/fa";
-import { jarvis } from "../../assets/images";
+import { startApi } from "../../assets/images";
 import "./profile.scss";
 import SingleSignOn from "../SingleSignOn/singleSignOn";
 import { connect } from "react-redux";
-import { userSignOutAction,userSignedInAction } from "../SingleSignOn/signon.action";
+import {
+  userSignOutAction,
+  userSignedInAction,
+} from "../SingleSignOn/signon.action";
 
 const ProfileComponent = (props) => {
   const [show, setShow] = useState(false);
@@ -28,27 +32,26 @@ const ProfileComponent = (props) => {
   const handleShow = () => setShow(true);
 
   useEffect(() => {
-    gapi.load("auth2", function () {
+    gapi.load("auth2", function() {
       gapi.auth2.init();
     });
   }, []);
 
   useEffect(() => {
     const userDetailsSession = JSON.parse(sessionStorage.getItem("login"));
-    if(userDetailsSession){
-        props.userSignedInAction(userDetailsSession);
+    if (userDetailsSession) {
+      props.userSignedInAction(userDetailsSession);
     }
   }, []);
 
   useEffect(() => {
     const userDetailsSession = props.userDetailsReducerValues;
-    if(userDetailsSession.userSignedOn && userDetailsSession.userDetails){
-        setShow(false)
-        attachUserDetails(userDetailsSession.userDetails);
+    if (userDetailsSession.userSignedOn && userDetailsSession.userDetails) {
+      setShow(false);
+      attachUserDetails(userDetailsSession.userDetails);
     } else {
-        setUser({})
+      setUser({});
     }
-   
   }, [props.userDetailsReducerValues.userSignedOn]);
 
   const attachUserDetails = (userDetail) => {
@@ -67,8 +70,8 @@ const ProfileComponent = (props) => {
 
   const signOut = () => {
     var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-     // console.log("User signed out.");
+    auth2.signOut().then(function() {
+      // console.log("User signed out.");
       //sign out action
       props.userSignOutAction();
     });
@@ -78,9 +81,18 @@ const ProfileComponent = (props) => {
     <>
       <Row className="profile">
         <Col md="7" className="text-left">
-          <h5>teleport</h5>
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src={startApi}
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{" "}
+            TELEPORT{" "}
+          </Navbar.Brand>
         </Col>
-        
+
         <Col md="5" className="text-right">
           {user && Object.keys(user).length === 0 ? (
             <FaUserAstronaut size={20} onClick={handleShow} />
@@ -90,7 +102,11 @@ const ProfileComponent = (props) => {
                 <img src={user.profie_pic} alt="user" />
               </div>
               <div className="dropdown-logout">
-                <DropdownButton id="dropdown-basic-button" variant="secondary" title="">
+                <DropdownButton
+                  id="dropdown-basic-button"
+                  variant="secondary"
+                  title=""
+                >
                   <p onClick={signOut}>Logout</p>
                 </DropdownButton>
               </div>
@@ -113,7 +129,7 @@ const mapStateToProps = (state) => ({
 
 const ProfileComponentContainer = connect(mapStateToProps, {
   userSignOutAction,
-  userSignedInAction
+  userSignedInAction,
 })(ProfileComponent);
 
 export default ProfileComponentContainer;
