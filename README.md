@@ -1,6 +1,30 @@
-# Teleport - A simplified alternative to POSTMAN 
+# Teleport
 
-## A simplified alternative to POSTMAN with features like response differ and hyper runs
+<div align="center">
+  <a href="https://hoppscotch.io"><img src="https://raw.githubusercontent.com/hoppscotch/hoppscotch/master/static/logo.png" alt="hoppscotch.io logo" height="160"></a>
+  <br>
+  <br>
+  <p>
+    <b>A free, simplified API request validator with features like response differ and hyper runs</b>
+  </p>
+  <p>
+     <i>Helps in validation request and response and gives you real time notifications. </i>
+  </p>
+  <p>
+  </p>
+  <p>
+    <sub>Built with ❤︎ by
+      <a href="https://github.com/Rajdeepc">Rajdeep Chandra</a> 
+    </sub>
+  </p>
+</div>
+
+---
+
+**Donate: [GitHub Sponsors](https://github.com/sponsors/rajrock38), [Open Collective](https://opencollective.com/rajrock38), [Patreon](https://www.patreon.com/rajrock38), [PayPal](https://www.paypal.me/rajrock38)**
+
+
+
 
 > In response to numerous feedbacks, I have already started working on Phase 2. I will bring the key checker switch and hyper run which will be "live" soon.
 >
@@ -37,24 +61,21 @@ This piece of application is a long term release of new features which can be se
 
 [Rajdeep]: http://reactive-rajdeep.netlify.com/
 
-## Tech stack
+## Usage 💡
 
+1. Choose `method`
+2. Enter `URL`
+3. Send request
+4. Get response
 
-- React CRA
-- Redux state management
-- UI modules:
-  - SASS
-  - React Router
-- Heroku
-- NodeJS
-  - HapiJS
-  - shortid
-  - xoauth
-- Mongoose
-- MongoDB Atlas
-  - mlab
-- IndexDB - In mermory database
-- Google Single Sign On
+## Built with 🔧
+
+- HTML - For the web framework
+- SASS - For styling components
+- JavaScript - The Engine
+- [Vue](https://reactjs.org/)
+- [NodeJS](https://nodejs.org/)
+- [MongoDB](https://mongodb.org/)
 
 
 ## Features and Roadmap

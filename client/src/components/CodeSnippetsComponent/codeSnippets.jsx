@@ -31,7 +31,7 @@ export default function CodeSnippets({ data }) {
 
   return (
     <>
-      <Modal.Header closeButton className="generate-code-modal-header">
+      <Modal.Header closeButton className="generate-code-modal-header code-modal">
         <Modal.Title>GENERATE CODE SNIPPETS</Modal.Title>
       </Modal.Header>
       <Modal.Body className="save-modal-body">

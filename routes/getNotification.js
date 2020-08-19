@@ -21,8 +21,10 @@ router.post('/', async (req,res) => {
     }
     console.log('isSubscribed' + isSubscribed);
     // if the user has subscriber he gets the notifications
-    if(isSubscribed){
+    if(isSubscribed && items && items[0].allNotifications){
         res.status(200).json({allNotifications: items[0].allNotifications})
+    } else {
+        res.status(200).json({allNotifications: []})
     }
 })
 

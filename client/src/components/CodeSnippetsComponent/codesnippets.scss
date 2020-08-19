@@ -16,11 +16,13 @@
   width: 90%;
   max-width: none!important;
   .save-modal-body{
+    padding: 15px;
     height: auto;
   }
 }
 .save-modal-body {
   height: 400px;
+  padding: 0;
   .choose-filter-language {
     box-shadow: 9px 0 5px -8px #ded9d9;
     height: 100%;

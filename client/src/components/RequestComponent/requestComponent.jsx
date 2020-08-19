@@ -101,12 +101,12 @@ const RequestComponent = (props) => {
     }
   },[url])
 
-  useEffect(() => {
-    if (props.signInDetails.userSignedOn && showNotifications) {
-      console.log(" user signed on and show notification is true calling all notifications api")
-      props.showAllNotifications(props.signInDetails.userDetails.Du || props.signInDetails.userDetails.yu, url)
-    }
-  }, [props.signInDetails.userSignedOn && showNotifications]);
+  // useEffect(() => {
+  //   if (props.signInDetails.userSignedOn && showNotifications) {
+  //     console.log(" user signed on and show notification is true calling all notifications api")
+  //     props.showAllNotifications(props.signInDetails.userDetails.Du || props.signInDetails.userDetails.yu, url)
+  //   }
+  // }, [props.signInDetails.userSignedOn && showNotifications]);
 
   const handleClose = () => {
     setShow(false);
