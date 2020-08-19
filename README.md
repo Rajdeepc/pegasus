@@ -21,11 +21,17 @@
 
 ---
 
+
+
 **Donate: [GitHub Sponsors](https://github.com/sponsors/rajrock38), [Open Collective](https://opencollective.com/rajrock38), [Patreon](https://www.patreon.com/rajrock38), [PayPal](https://www.paypal.me/rajrock38)**
+<br>
+<br>
+<div align="center">
+  <a href="https://lintrest.herokuapp.com"><img src="https://github.com/Rajdeepc/teleport/blob/master/github/teleport-cover.png?raw=true" alt="Screenshot1" width="100%"></a>
+</div>
 
-
-![](https://github.com/Rajdeepc/teleport/blob/master/github/teleport-cover.png?raw=true)
-
+<br>
+<br>
 
 > In response to numerous feedbacks, I have already started working on Phase 2. I will bring the key checker switch and hyper run which will be "live" soon.
 >
