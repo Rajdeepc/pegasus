@@ -23,7 +23,7 @@
 
 
 
-**Donate: [GitHub Sponsors](https://github.com/sponsors/rajrock38), [Open Collective](https://opencollective.com/rajrock38), [Patreon](https://www.patreon.com/rajrock38), [PayPal](https://www.paypal.me/rajrock38)**
+**Donate: [GitHub Sponsors](https://github.com/sponsors/Rajdeepc), [Open Collective](https://opencollective.com/rajdeep-chandra), [Patreon](https://www.patreon.com/chandraraj), [PayPal](https://www.paypal.me/RajdeepC)**
 <br>
 <br>
 <div align="center">
