@@ -24,6 +24,7 @@
 **Donate: [GitHub Sponsors](https://github.com/sponsors/rajrock38), [Open Collective](https://opencollective.com/rajrock38), [Patreon](https://www.patreon.com/rajrock38), [PayPal](https://www.paypal.me/rajrock38)**
 
 
+[]
 
 
 > In response to numerous feedbacks, I have already started working on Phase 2. I will bring the key checker switch and hyper run which will be "live" soon.
@@ -53,7 +54,7 @@ I have been working with React for about four years. I built cool stuff at [Gith
 
 This is a showcase application I've built in my spare time to experiment the power of React that I wanted to try before: `React`, `NodeJS`, `IndexDB`.
 
-There are not many alternative to REST client applications like POSTMAN on the web and I think that this codebase contains enough complexity to offer valuable insights to **React developers of all skill levels** while still being _relatively_ easy to understand.
+I think that this codebase contains enough complexity to offer valuable insights to **React developers of all skill levels** while still being _relatively_ easy to understand.
 
 ---
 
