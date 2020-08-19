@@ -24,7 +24,7 @@
 **Donate: [GitHub Sponsors](https://github.com/sponsors/rajrock38), [Open Collective](https://opencollective.com/rajrock38), [Patreon](https://www.patreon.com/rajrock38), [PayPal](https://www.paypal.me/rajrock38)**
 
 
-[]
+![](https://github.com/Rajdeepc/teleport/blob/master/github/teleport-cover.png?raw=true)
 
 
 > In response to numerous feedbacks, I have already started working on Phase 2. I will bring the key checker switch and hyper run which will be "live" soon.
