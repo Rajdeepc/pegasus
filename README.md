@@ -80,7 +80,7 @@ This piece of application is a long term release of new features which can be se
 - HTML - For the web framework
 - SASS - For styling components
 - JavaScript - The Engine
-- [Vue](https://reactjs.org/)
+- [React](https://reactjs.org/)
 - [NodeJS](https://nodejs.org/)
 - [MongoDB](https://mongodb.org/)
 
