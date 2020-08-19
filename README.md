@@ -1,7 +1,7 @@
 # Teleport
 
 <div align="center">
-  <a href="https://hoppscotch.io"><img src="https://raw.githubusercontent.com/hoppscotch/hoppscotch/master/static/logo.png" alt="hoppscotch.io logo" height="160"></a>
+  <a href="https://hoppscotch.io"><img src="https://github.com/Rajdeepc/teleport/blob/master/github/teleport.png?raw=true" alt="hoppscotch.io logo" height="160"></a>
   <br>
   <br>
   <p>
