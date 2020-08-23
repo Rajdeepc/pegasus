@@ -1,7 +1,7 @@
 # Teleport
 
 <div align="center">
-  <a href="https://lintrest.herokuapp.com"><img src="https://github.com/Rajdeepc/teleport/blob/master/github/teleport.png?raw=true" alt="teleport logo" height="160"></a>
+  <a href="https://teleportz.herokuapp.com/"><img src="https://github.com/Rajdeepc/teleport/blob/master/github/teleport.png?raw=true" alt="teleport logo" height="160"></a>
   <br>
   <br>
   <p>
@@ -42,7 +42,7 @@ This is not only a simplified POSTMAN close built with **react**, but also an ex
 
 ## Working application
 
-Check out the **live demo** -> https://lintrest.herokuapp.com
+Check out the **live demo** -> https://teleportz.herokuapp.com/
 
 
 If you like my work, feel free to:
