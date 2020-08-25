@@ -60,9 +60,9 @@ const ProfileComponent = (props) => {
       setUser((prevState) => {
         return {
           ...prevState,
-          username: userDetail.Bd || userDetail.Cd,
-          profie_pic: userDetail.MK || userDetail.PK,
-          email: userDetail.Au || userDetail.yu,
+          username: userDetail.username,
+          profie_pic: userDetail.userImg,
+          email: userDetail.email,
         };
       });
     }

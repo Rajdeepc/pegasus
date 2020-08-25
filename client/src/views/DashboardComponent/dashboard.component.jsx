@@ -160,6 +160,7 @@ const LeftPanel = (props) => {
                     </div>
                   </ListGroup.Item>
                   <ListGroup.Item
+                    disabled
                     onClick={() => setActivePanel(2)}
                     className={activePanel === 2 ? "active" : ""}
                   >

@@ -1,34 +1,52 @@
 import React, { useState } from "react";
 import { Modal, Button, Table } from "react-bootstrap";
 import { connect } from "react-redux";
-import moment from 'moment';
+import moment from "moment";
 
 const DocumentationComponent = (props) => {
-
   // creating isActive property to the existing array
+
   const allApiListOfArray =
     props.allApiEndPoints &&
     props.allApiEndPoints.apiEndPoints &&
-    props.allApiEndPoints.apiEndPoints.map((obj) => ({
-      ...obj,
-      isChecked: false,
-    }));
+    props.allApiEndPoints.apiEndPoints.filter((obj) => {
+      if(obj.componentValue && obj.componentValue.url){
+        return {
+          ...obj,
+          isChecked: false
+        }
+      }
+    });
+
+    console.log(allApiListOfArray)
+
 
   const [checkedRow, setCheckedRow] = useState(allApiListOfArray);
 
-
-
   const handleCheckBox = (event) => {
-      console.log(event.target.value, event.target.checked);
-      const tempArray = [...checkedRow]
-      tempArray.filter((apiItem) => {
-      if (apiItem.gid === event.target.value){
+    const tempArray = [...checkedRow];
+    tempArray.filter((apiItem) => {
+      if (apiItem.gid === event.target.value) {
         apiItem.isChecked = event.target.checked;
       }
-        
     });
-    console.log(tempArray)
     setCheckedRow(tempArray);
+  };
+
+  const saveToExcel = () => {
+    const excelRows = []
+    checkedRow.map((item) => {
+      excelRows.push(Object.values(item.componentValue))
+    })
+    console.log(excelRows)
+    let csvContent = "data:text/csv;charset=utf-8," + excelRows.map((e) => e.join(",")).join("\n");
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", "data:text/csv;charset=utf-8,%EF%BB%BF" + encodeURI(csvContent));
+    link.setAttribute("download", "my_data.csv");
+    document.body.appendChild(link); // Required for FF
+
+    link.click(); // This will download the data file named "my_data.csv".
   };
 
   return (
@@ -71,7 +89,11 @@ const DocumentationComponent = (props) => {
                     </td>
                     <td>{JSON.stringify(item.componentValue.headers)}</td>
                     <td></td>
-                    <td>{moment(item.componentValue.updated_time).format('MM/DD/YYYY, hh:mm A')}</td>
+                    <td>
+                      {moment(item.componentValue.updated_time).format(
+                        "MM/DD/YYYY, hh:mm A"
+                      )}
+                    </td>
                   </tr>
                 );
               }
@@ -79,7 +101,9 @@ const DocumentationComponent = (props) => {
           </tbody>
         </Table>
         <div className="text-right">
-          <Button variant="success">Save To Excel</Button>
+          <Button variant="success" onClick={saveToExcel}>
+            Save To Excel
+          </Button>
         </div>
       </Modal.Body>
     </div>

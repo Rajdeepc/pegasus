@@ -4,7 +4,7 @@ import { userSignedInAction } from "./signon.action";
 import { connect } from "react-redux";
 import { loginlogo } from "../../assets/images";
 
-import './signon.scss'
+import "./signon.scss";
 const SingleSignOn = (props) => {
   useEffect(() => {
     renderButton();
@@ -23,8 +23,16 @@ const SingleSignOn = (props) => {
   }
 
   const onSuccess = (googleUser) => {
-    const userDetails = googleUser.getBasicProfile();
-    console.log(userDetails);
+    const profile = googleUser.getBasicProfile();
+    //  console.log(userDetails);
+    const username = profile.getName();
+    const userImg = profile.getImageUrl();
+    const email = profile.getEmail(); // This is null if the 'email' scope is not present.
+    const userDetails = {
+      username,
+      userImg,
+      email,
+    };
     props.userSignedInAction(userDetails);
   };
 
@@ -34,16 +42,16 @@ const SingleSignOn = (props) => {
 
   return (
     <div className="signin-container">
-      <div class="logo">
-        <img src={loginlogo} alt=""/>
+      <div className="logo">
+        <img src={loginlogo} alt="" />
       </div>
       <div className="header">
-      <h1>Sign in with</h1>
-      <h1>Google</h1>
+        <h1>Sign in with</h1>
+        <h1>Google</h1>
       </div>
-      
+
       <div className="signon-popup">
-      <div id="my-signin2" className="text-center"></div>
+        <div id="my-signin2" className="text-center"></div>
       </div>
     </div>
   );
