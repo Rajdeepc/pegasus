@@ -1,7 +1,7 @@
 # Teleport
 
 <div align="center">
-  <a href="https://lintrest.herokuapp.com"><img src="https://github.com/Rajdeepc/teleport/blob/master/github/teleport.png?raw=true" alt="teleport logo" height="160"></a>
+  <a href="https://lintrest.herokuapp.com"><img src="https://github.com/Rajdeepc/teleport/blob/master/github/teleport.png?raw=true" alt="teleport logo"></a>
   <br>
   <br>
   <p>
