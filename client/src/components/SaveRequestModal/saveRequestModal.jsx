@@ -27,7 +27,7 @@ export default function SaveRequestModal(props) {
       <Modal.Header closeButton className="save-modal-header">
         <Modal.Title>SAVE REQUEST</Modal.Title>
       </Modal.Header>
-      <Modal.Body className="save-modal-body">
+      <Modal.Body className="save-modal-body save-documents">
         <Form.Group controlId="formBasicRequest">
           <p className="title-header">
             Requests are saved in collections (a group of requests).

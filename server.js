@@ -2,14 +2,14 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const mongoose = require("mongoose");
-const path = require('path');
+const path = require("path");
 
 const dotenv = require("dotenv");
 dotenv.config(); // to pull local configuration from .env file
 
 const corsOptions = {
   exposedHeaders:
-    "Content-Range,X-Content-Range,ETag,Vary,Content-Type,Content-Encoding,Date,Expires,Cache-Control,X-Content-Type-Options,X-Frame-Options,Content-Security-Policy,X-XSS-Protection,Server,Alt-Svc,Transfer-Encoding"
+    "Content-Range,X-Content-Range,ETag,Vary,Content-Type,Content-Encoding,Date,Expires,Cache-Control,X-Content-Type-Options,X-Frame-Options,Content-Security-Policy,X-XSS-Protection,Server,Alt-Svc,Transfer-Encoding",
 };
 
 // setup your middlewares here
@@ -30,10 +30,10 @@ app.use("/updateSubscriber", updateSubscriber);
 app.use("/getNotification", getNotification);
 
 // Serve static files assets on heroku
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, "client/build")));
 
 // MongoDB connection string
-const MONGO_LOCAL_URI = 'mongodb://localhost:27017/fakeDB'
+const MONGO_LOCAL_URI = "mongodb://localhost:27017/fakeDB";
 const MONGO_DB_URI = `mongodb://${process.env.MONGODB_USER}:${process.env.MONGODB_PASS}@ds119692.mlab.com:19692/vpostman`;
 mongoose
   .connect(MONGO_LOCAL_URI, { useNewUrlParser: true })
@@ -42,8 +42,8 @@ mongoose
 
 const port = process.env.PORT || 4000;
 // Right before your app.listen(), add this:
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/client/build/index.html"));
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}...`));

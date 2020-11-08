@@ -395,7 +395,7 @@ const RequestComponent = (props) => {
             <div className="flex6">
               <Nav variant="pills" className="justify-content-end extra-links">
                 <Nav.Item>
-                  <Nav.Link  onClick={() => openDocumentationModal(true)}>Documentation</Nav.Link>
+                  <Nav.Link  onClick={() => openDocumentationModal(true)}>Create API Docs</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link onClick={() => openCodeGenerateModal(true)}>

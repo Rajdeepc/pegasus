@@ -18,6 +18,9 @@
 
 .save-modal-body {
     color: #949494;
+    &.save-documents{
+        padding:20px;
+    }
 }
 
 .save-modal-footer {

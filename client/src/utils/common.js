@@ -155,7 +155,11 @@ const renderStatusClass = (responseStatus) => {
       };
 
     default:
-      return;
+      return {
+        apiColor: "danger",
+        apiStatusMsg:
+          "Something went wrong"
+      };
   }
 };
 

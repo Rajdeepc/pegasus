@@ -95,7 +95,7 @@ const ProfileComponent = (props) => {
 
         <Col md="5" className="text-right">
           {user && Object.keys(user).length === 0 ? (
-            <FaUserAstronaut size={20} onClick={handleShow} />
+            <FaUserAstronaut className="user-image" size={20} onClick={handleShow} />
           ) : (
             <div className="user-profile">
               <div className="profile-img">

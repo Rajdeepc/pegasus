@@ -3,6 +3,7 @@ import { Modal, Button, Table } from "react-bootstrap";
 import { connect } from "react-redux";
 import moment from "moment";
 
+
 const DocumentationComponent = (props) => {
   // creating isActive property to the existing array
 
@@ -101,9 +102,7 @@ const DocumentationComponent = (props) => {
           </tbody>
         </Table>
         <div className="text-right">
-          <Button variant="success" onClick={saveToExcel}>
-            Save To Excel
-          </Button>
+        <button className="btn btn-primary" onClick={saveToExcel}> Save To Excel</button>
         </div>
       </Modal.Body>
     </div>

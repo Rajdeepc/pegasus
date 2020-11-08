@@ -34,7 +34,7 @@ export default function CodeSnippets({ data }) {
       <Modal.Header closeButton className="generate-code-modal-header code-modal">
         <Modal.Title>GENERATE CODE SNIPPETS</Modal.Title>
       </Modal.Header>
-      <Modal.Body className="save-modal-body">
+      <Modal.Body className="save-modal-body generate-code-snippets">
         <Tab.Container id="code-generate-tabs" defaultActiveKey="NodeJS-Axios">
           <Row noGutters>
             <Col sm={3}>
