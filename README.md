@@ -2,7 +2,7 @@
   <img src="https://github.com/Rajdeepc/teleport/blob/master/github/teleport.png?raw=true" width="600">
 </p><br>
 
-<p align="center"><a href="https://github.com/Rajdeepc/teleport/blob/master/github/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Rajdeepc/teleport"></a> <a href="https://github.com/Rajdeepc/teleport/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Rajdeepc/teleport"></a> <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Rajdeepc/teleport">
+<p align="center"><a href="https://github.com/Rajdeepc/teleport/blob/master/github/LICENSE"><img alt="APM" src="https://img.shields.io/apm/l/react"></a> <a href="https://github.com/Rajdeepc/teleport/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Rajdeepc/teleport"></a> <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Rajdeepc/teleport">
 </p>
 
 <p align="center">
