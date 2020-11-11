@@ -2,13 +2,13 @@
   <img src="https://github.com/Rajdeepc/teleport/blob/master/github/teleport.png?raw=true" width="600">
 </p><br>
 
-<p align="center"><a href="https://travis-ci.com/gsilvamartin/rtcode"><image src="https://travis-ci.com/gsilvamartin/RTCode.svg?branch=master" style="max-width:100%"></a> <a href="https://github.com/gsilvamartin/RTCode/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/gsilvamartin/RTCode"></a> <a href="https://github.com/gsilvamartin/RTCode/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/gsilvamartin/RTCode"></a> <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/gsilvamartin/rtcode">
+<p align="center"><a href="https://github.com/Rajdeepc/teleport/blob/master/github/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Rajdeepc/teleport"></a> <a href="https://github.com/Rajdeepc/teleport/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Rajdeepc/teleport"></a> <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Rajdeepc/teleport">
 </p>
 
 <p align="center">
   <sub>Developed with ❤︎ by
     <a href="https://github.com/Rajdeepc">Rajdeep Chandra</a> and
-    <a href="https://github.com/gsilvamartin/rtcode/graphs/contributors">contributors</a>
+    <a href="https://github.com/Rajdeepc/rtcode/graphs/contributors">contributors</a>
   </sub>
 </p>
 
