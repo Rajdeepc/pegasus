@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Rajdeepc/teleport/blob/master/github/teleport.png?raw=true" width="350">
+  <img src="https://github.com/Rajdeepc/teleport/blob/master/github/teleport.png?raw=true" width="450">
 </p><br>
 
 <p align="center"><a href="https://travis-ci.com/gsilvamartin/rtcode"><image src="https://travis-ci.com/gsilvamartin/RTCode.svg?branch=master" style="max-width:100%"></a> <a href="https://github.com/gsilvamartin/RTCode/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/gsilvamartin/RTCode"></a> <a href="https://github.com/gsilvamartin/RTCode/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/gsilvamartin/RTCode"></a> <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/gsilvamartin/rtcode">
@@ -53,8 +53,8 @@
 
 - [Javascript](https://developer.mozilla.org/en/JavaScript) - for scripts
 - [NodeJS](https://nodejs.org/en/) - for backend coding
-- [Express](https://github.com/express) - vscode text editor
-- [React](https://github.com/React) - javascript terminal
+- [Express](https://github.com/express) - for live server
+- [React](https://github.com/React) - for front end
 - [Socket.IO](https://github.com/socketio/socket.io) - for real time communication
 
 ## Contribution 🥰
