@@ -5,6 +5,16 @@
 <p align="center"><a href="https://github.com/Rajdeepc/pegasus/blob/master/LICENSE.md"><img alt="APM" src="https://img.shields.io/apm/l/react"></a> <a href="https://github.com/Rajdeepc/pegasus/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Rajdeepc/pegasus"></a> <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Rajdeepc/pegasus">
 </p>
 
+
+
+<p align="center">
+  <sub>Developed with ❤︎ by
+    <a href="https://github.com/Rajdeepc">Rajdeep Chandra</a> and
+    <a href="https://github.com/Rajdeepc/rtcode/graphs/contributors">contributors</a>
+  </sub>
+</p>
+
+
  See Live [https://pegasus-fly.herokuapp.com/](https://pegasus-fly.herokuapp.com/)
 
  ## Support My Work
@@ -15,14 +25,6 @@ Click on any of the below links to support:
 [Open Collective](https://opencollective.com/rajdeep-chandra), 
 [Patreon](https://www.patreon.com/chandraraj), 
 [PayPal](https://www.paypal.me/RajdeepC)
-
-
-<p align="center">
-  <sub>Developed with ❤︎ by
-    <a href="https://github.com/Rajdeepc">Rajdeep Chandra</a> and
-    <a href="https://github.com/Rajdeepc/rtcode/graphs/contributors">contributors</a>
-  </sub>
-</p>
 
 ## About Pegasus
 
