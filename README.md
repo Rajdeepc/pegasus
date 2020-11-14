@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://github.com/Rajdeepc/Pegasus/blob/master/github/Pegasus.png?raw=true" width="600">
+  <img src="https://github.com/Rajdeepc/pegasus/blob/master/github/pegasus.png?raw=true" width="600">
 </p><br>
 
-<p align="center"><a href="https://github.com/Rajdeepc/Pegasus/blob/master/LICENSE.md"><img alt="APM" src="https://img.shields.io/apm/l/react"></a> <a href="https://github.com/Rajdeepc/Pegasus/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Rajdeepc/Pegasus"></a> <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Rajdeepc/Pegasus">
+<p align="center"><a href="https://github.com/Rajdeepc/pegasus/blob/master/LICENSE.md"><img alt="APM" src="https://img.shields.io/apm/l/react"></a> <a href="https://github.com/Rajdeepc/pegasus/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Rajdeepc/pegasus"></a> <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Rajdeepc/pegasus">
 </p>
 
 <p align="center">
