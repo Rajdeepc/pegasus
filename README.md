@@ -57,12 +57,6 @@ Click on any of the below links to support:
 - More Personalized Settings - More Personalised Settings Feature
 - IndexDB Support - Localized data now saved in IndexDB for more storage
 
-⌨️ **Editor Keyboard Shortcuts**:
-
-- Indent all lines <kbd>Ctrl</kbd> + <kbd>S</kbd> or <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd>
-- Code auto complete <kbd>Ctrl</kbd> + <kbd>Space</kbd>
-- File execute <kbd>Ctrl</kbd> + <kbd>Enter</kbd>
-
 ## Built with 🔧
 
 - [Javascript](https://developer.mozilla.org/en/JavaScript) - for scripts
