@@ -5,7 +5,7 @@ export default function ReleaseNotesComponent() {
     <div>
       <h2>July 2020 (version 1.0.0)</h2>
       <hr></hr>
-      <p>Welcome to the July 2020 release of Teleport. There are a number of updates in this version that we hope you will
+      <p>Welcome to the July 2020 release of Pegasus. There are a number of updates in this version that we hope you will
       like, some of the key highlights include:</p>
       <ul>
         <li>Compare Response Feature - Compare responses of the same API once response structure changes</li>

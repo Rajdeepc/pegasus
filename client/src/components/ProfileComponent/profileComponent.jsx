@@ -89,7 +89,7 @@ const ProfileComponent = (props) => {
               height="30"
               className="d-inline-block align-top"
             />{" "}
-            TELEPORT{" "}
+            PEGASUS{" "}
           </Navbar.Brand>
         </Col>
 

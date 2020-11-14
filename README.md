@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://github.com/Rajdeepc/teleport/blob/master/github/teleport.png?raw=true" width="600">
+  <img src="https://github.com/Rajdeepc/Pegasus/blob/master/github/Pegasus.png?raw=true" width="600">
 </p><br>
 
-<p align="center"><a href="https://github.com/Rajdeepc/teleport/blob/master/LICENSE.md"><img alt="APM" src="https://img.shields.io/apm/l/react"></a> <a href="https://github.com/Rajdeepc/teleport/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Rajdeepc/teleport"></a> <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Rajdeepc/teleport">
+<p align="center"><a href="https://github.com/Rajdeepc/Pegasus/blob/master/LICENSE.md"><img alt="APM" src="https://img.shields.io/apm/l/react"></a> <a href="https://github.com/Rajdeepc/Pegasus/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Rajdeepc/Pegasus"></a> <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Rajdeepc/Pegasus">
 </p>
 
 <p align="center">
@@ -12,9 +12,9 @@
   </sub>
 </p>
 
-## About Teleport
+## About Pegasus
 
-<p style="text-align: justify">Teleport is a web REST application built specifically for testers and developers to have a holistic view of what changes are breaking the Front End Code. Most of the time Backend changes key pairs which causes app crash. Teleporter is specifically designed to solve problems such as :<p>
+<p style="text-align: justify">Pegasus is a web REST application built specifically for testers and developers to have a holistic view of what changes are breaking the Front End Code. Most of the time Backend changes key pairs which causes app crash. Pegasuser is specifically designed to solve problems such as :<p>
  
   * Code Break due to key changes in API.
   * Check specific key updates with line highlighting.
