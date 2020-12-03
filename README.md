@@ -10,7 +10,7 @@
 <p align="center">
   <sub>Developed with ❤︎ by
     <a href="https://github.com/Rajdeepc">Rajdeep Chandra</a> and
-    <a href="https://github.com/Rajdeepc/rtcode/graphs/contributors">contributors</a>
+    <a href="https://github.com/Rajdeepc/pegasus/graphs/contributors">contributors</a>
   </sub>
 </p>
 
