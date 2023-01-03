@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import { userSignedInAction } from "./signon.action";
 import { connect } from "react-redux";
-import { loginlogo } from "../../assets/images";
+import { loginlogo } from "../../assets";
 
 import "./signon.scss";
 const SingleSignOn = (props) => {

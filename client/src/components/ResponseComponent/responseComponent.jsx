@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Table, Tab, OverlayTrigger, Tooltip } from "react-bootstrap";
 import "./response.scss";
-import { cookie } from "../../assets/images";
+import { cookie } from "../../assets";
 import ReactJson from "react-json-view";
 import PropTypes from "prop-types";
 import { AiOutlineQuestionCircle } from "react-icons/ai";

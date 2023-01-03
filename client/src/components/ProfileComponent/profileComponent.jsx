@@ -11,7 +11,7 @@ import {
   Col,
 } from "react-bootstrap";
 import { FaUserAstronaut } from "react-icons/fa";
-import { startApi } from "../../assets/images";
+import { startApi } from "../../assets";
 import "./profile.scss";
 import SingleSignOn from "../SingleSignOn/singleSignOn";
 import { connect } from "react-redux";

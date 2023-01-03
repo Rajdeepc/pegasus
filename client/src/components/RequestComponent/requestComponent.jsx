@@ -28,7 +28,7 @@ import {
   isEmpty,
   checkJSON
 } from "../../utils/common";
-import { startApi } from "../../assets/images";
+import { startApi } from "../../assets";
 import { connect } from "react-redux";
 import {
   updateEntryWithRequest,

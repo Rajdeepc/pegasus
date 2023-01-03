@@ -1,5 +1,5 @@
 const logo = require('./images/url.png');
-const startApi = require('./images/start.svg');
+const startApi = require('./images/start.png');
 const jarvis = require('./images/jarvis.png');
 const cookie = require('./images/cookie.svg');
 const comingsoon = require('./images/comingsoon.svg');

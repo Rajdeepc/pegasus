@@ -37,7 +37,7 @@ const MONGO_LOCAL_URI = "mongodb://localhost:27017/fakeDB";
 const MONGO_DB_URI = process.env.MONGO_DB_URI
 
 mongoose
-  .connect((process.env.NODE_ENV === "production" ? MONGO_DB_URI : MONGO_LOCAL_URI), { useNewUrlParser: true })
+  .connect((process.env.NODE_ENV === "production" ? MONGO_DB_URI : MONGO_DB_URI), { useNewUrlParser: true })
   .then(() => console.log("New connection established"))
   .catch((err) => console.log("Something went wrong" + err));
 
