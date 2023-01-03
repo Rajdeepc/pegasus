@@ -49,6 +49,9 @@
     },
     "extends": "react-app"
   },
+  "engines": {
+    "node": "16.17.0"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
