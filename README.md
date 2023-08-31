@@ -15,7 +15,6 @@
 </p>
 
 
- See Live [https://pegasus-fly.herokuapp.com/](https://pegasus-fly.herokuapp.com/)
 
  ## Support My Work
 
